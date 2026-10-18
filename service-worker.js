@@ -1,5 +1,5 @@
-// Connected Paediatrics Inclinometer v10: cache static application shell only.
-const CACHE = 'cp-inclinometer-v10';
+// Connected Paediatrics Inclinometer v11: cache static application shell only.
+const CACHE = 'cp-inclinometer-v11';
 const SHELL = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', event => {
  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
